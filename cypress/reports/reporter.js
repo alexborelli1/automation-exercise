@@ -1,8 +1,6 @@
-const reporter = require('cucumber-html-reporter')
-
 const options = {
     theme: 'bootstrap',
-    jsonDir: 'cypress/reports/cucumber-json',
+    jsonDir: 'cypress/reports',
     output: 'cypress/reports/index.html',
     reportSuiteAsScenarios: true,
     scenarioTimestamp: true,
