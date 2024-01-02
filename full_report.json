@@ -12,13 +12,13 @@
     "hasOther": false,
     "skipped": 0,
     "hasSkipped": false,
-    "start": "2024-01-02T11:38:15.221Z",
-    "end": "2024-01-02T11:38:25.370Z",
-    "duration": 10149
+    "start": "2024-01-02T12:13:13.964Z",
+    "end": "2024-01-02T12:13:24.753Z",
+    "duration": 10789
   },
   "results": [
     {
-      "uuid": "74e1f6e0-e7d7-4827-99f9-16c5dc85957d",
+      "uuid": "b0d9307b-8e4f-43ae-b319-fefe0ddde4da",
       "title": "",
       "fullFile": "cypress\\integration\\CadatroUsuario.spec.js",
       "file": "cypress\\integration\\CadatroUsuario.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "f17e8226-8238-4493-bf0a-ec9e45c41fb0",
+          "uuid": "71a8866e-d5c1-4489-b83d-351a58a98fe5",
           "title": "Login",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Cadastrar um novo usuário",
               "fullTitle": "Login Cadastrar um novo usuário",
               "timedOut": null,
-              "duration": 10098,
+              "duration": 10750,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.visit('login');\ncy.get('input[name=\"name\"]').type('Alex Borelli');\ncy.get('input[data-qa=\"signup-email\"]').type(chance.email());\ncy.get('button[data-qa=\"signup-button\"]').click();\ncy.url().should('contain', 'signup');\ncy.get('input#id_gender1').check();\ncy.get('input#password').type('teste1234'); // Data\ncy.get('select#days').select('12');\ncy.get('select#months').select('July');\ncy.get('select#years').select('1979');\ncy.get('input#first_name').type('Alex');\ncy.get('input#last_name').type('Borelli');\ncy.get('input#company').type('Arpa');\ncy.get('input#address1').type('Rua Guara, 123 - 302');\ncy.get('input#address2').type('Itaiba'); // Combo Country\ncy.get('select#country').select('Australia', {\n  force: true\n});\ncy.get('input#state').type('Santa Catarina');\ncy.get('input#city').type('Concordia');\ncy.get('input#zipcode').type('89703-078');\ncy.get('input#mobile_number').type('34424242');\ncy.get('button[data-qa=\"create-account\"]').click();\ncy.url().should('contain', 'account_created');",
               "err": {},
-              "uuid": "2176be61-fd28-4b54-bef3-a421981ef837",
-              "parentUUID": "f17e8226-8238-4493-bf0a-ec9e45c41fb0",
+              "uuid": "57fb41c8-fb0f-4009-8991-63f20f7a7361",
+              "parentUUID": "71a8866e-d5c1-4489-b83d-351a58a98fe5",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "2176be61-fd28-4b54-bef3-a421981ef837"
+            "57fb41c8-fb0f-4009-8991-63f20f7a7361"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 10098,
+          "duration": 10750,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
