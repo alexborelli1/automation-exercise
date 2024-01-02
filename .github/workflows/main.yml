@@ -44,7 +44,7 @@ jobs:
     - run: npm run cy:run
     
     # gerar o relatorio em html
-    - run: npm run report
+    - run: npm run report:mocha
     
     # publicar relatorio em html
     - name: Deploy to GithubPages
