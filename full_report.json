@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "start": "2024-01-02T11:38:15.221Z",
+    "end": "2024-01-02T11:38:25.370Z",
+    "duration": 10149
+  },
+  "results": [
+    {
+      "uuid": "74e1f6e0-e7d7-4827-99f9-16c5dc85957d",
+      "title": "",
+      "fullFile": "cypress\\integration\\CadatroUsuario.spec.js",
+      "file": "cypress\\integration\\CadatroUsuario.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f17e8226-8238-4493-bf0a-ec9e45c41fb0",
+          "title": "Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Cadastrar um novo usuário",
+              "fullTitle": "Login Cadastrar um novo usuário",
+              "timedOut": null,
+              "duration": 10098,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('login');\ncy.get('input[name=\"name\"]').type('Alex Borelli');\ncy.get('input[data-qa=\"signup-email\"]').type(chance.email());\ncy.get('button[data-qa=\"signup-button\"]').click();\ncy.url().should('contain', 'signup');\ncy.get('input#id_gender1').check();\ncy.get('input#password').type('teste1234'); // Data\ncy.get('select#days').select('12');\ncy.get('select#months').select('July');\ncy.get('select#years').select('1979');\ncy.get('input#first_name').type('Alex');\ncy.get('input#last_name').type('Borelli');\ncy.get('input#company').type('Arpa');\ncy.get('input#address1').type('Rua Guara, 123 - 302');\ncy.get('input#address2').type('Itaiba'); // Combo Country\ncy.get('select#country').select('Australia', {\n  force: true\n});\ncy.get('input#state').type('Santa Catarina');\ncy.get('input#city').type('Concordia');\ncy.get('input#zipcode').type('89703-078');\ncy.get('input#mobile_number').type('34424242');\ncy.get('button[data-qa=\"create-account\"]').click();\ncy.url().should('contain', 'account_created');",
+              "err": {},
+              "uuid": "2176be61-fd28-4b54-bef3-a421981ef837",
+              "parentUUID": "f17e8226-8238-4493-bf0a-ec9e45c41fb0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2176be61-fd28-4b54-bef3-a421981ef837"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10098,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "mochawesome-report",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
